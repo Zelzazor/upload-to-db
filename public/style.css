@@ -31,3 +31,15 @@
     justify-content: space-between;
     padding: 10px;
 }
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
