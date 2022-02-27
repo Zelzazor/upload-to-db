@@ -12,8 +12,6 @@ db.run('CREATE TABLE IF NOT EXISTS articulos (id INTEGER PRIMARY KEY, title TEXT
 
 });
 
-db.run('UPDATE articulos SET imageUrl = "uploads/qOt2-iCn_400x400.jpg" WHERE id = 1')
-
 
 
 db.close();
