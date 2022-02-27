@@ -1,0 +1,9 @@
+Requerimientos:
+ - Node.js
+ - Yarn
+
+Para ejecutar el presente programa, debe ejecutar los siguientes comandos en la terminal:
+
+yarn
+
+yarn start
