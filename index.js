@@ -18,8 +18,8 @@ app.get('/create', (req, res) => {
 
 app.post('/create', upload.single('image'),(req, res) => {
     db.serialize(()=>{
-        let stmt = db.prepare('INSERT INTO articulos (title, description, imageUrl) VALUES (?,?,?)');
-        stmt.run(req.body.title, req.body.description, req.file.path, (err) => {
+        let stmt = db.prepare('INSERT INTO articulos (title, description, imageUrl, price) VALUES (?,?,?,?)');
+        stmt.run(req.body.title, req.body.description, req.file.path, req.body.price, (err) => {
             if (err) {
                 console.error(err.message)
                 return;
